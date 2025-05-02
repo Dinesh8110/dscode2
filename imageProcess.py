@@ -81,6 +81,29 @@ plt.legend()
 plt.show()
 
 
+#image Classification with sample image
+
+# from tensorflow.keras.preprocessing import image
+# import numpy as np
+
+# # Path to your test image (sample)
+# img_path = 'sample.jpg'  # replace with actual path
+
+# # Load and preprocess image
+# img = Image.open(img_path).convert('RGB').resize((150, 150))
+# img_array = np.array(img) / 255.0  # Normalize
+# img_array = np.expand_dims(img_array, axis=0)  # Shape: (1, 150, 150, 3)
+
+# # Predict using the trained model
+# prediction = model.predict(img_array)[0][0]  # single scalar value
+
+# # Interpret prediction
+# if prediction >= 0.5:
+#     print(f"Predicted: Dog ({prediction:.2f})")
+# else:
+#     print(f"Predicted: Cat ({prediction:.2f})")
+
+
 
 
 
