@@ -47,7 +47,7 @@ tfidf = vectorizer.fit_transform([doc1,doc2])
 cosinesim = cosine_similarity(tfidf[0:1], tfidf[1:2])
 print("Cosine similarity : ",cosinesim[0][0])
 
-#wordcloud
+# wordcloud
 wcloud1 = WordCloud(background_color = 'white').generate(doc1)
 plt.figure(figsize=(8,4))
 plt.title("WordCloud for doc1 ")
